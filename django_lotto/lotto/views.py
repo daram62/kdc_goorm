@@ -7,6 +7,7 @@ from .forms import PostForm
 
 def index(request):
     lottos = GuessNumbers.objects.all() # DB에 저장된 GuessNumbers 객체 모두를 가져온다.
+    
     # 브라우저로부터 넘어온 request를 그대로 template('default.html')에게 전달
     # {} 에는 추가로 함께 전달하려는 object들을 dict로 넣어줄 수 있음
     return render(request, 'lotto/default.html', {'lottos':lottos})
