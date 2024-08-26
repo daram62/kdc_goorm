@@ -23,7 +23,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
 
     # lotto > views.py 파일의 index() 함수 호출
-    path('', views.index),
+    # path('', views.index),
 
     path('hello/', views.hello, name='hello_main'), 
     
