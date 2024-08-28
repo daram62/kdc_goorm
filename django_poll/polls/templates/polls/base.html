@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+
+{% load static %}
+
 <html lang="ko">
     <head>
         <meta charset="utf-8">
@@ -7,6 +10,8 @@
         <title>Django Polls (version 1.0)</title>
         <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
         <link href="//fonts.googleapis.com/css?family=Do+Hyeon|Noto+Sans&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}" />
     </head>
 
     <body>
